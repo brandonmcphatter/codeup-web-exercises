@@ -69,10 +69,15 @@ if (cantEnroll){
 
 alert('Thank you for shopping at Costco!')
 alert('Please proceed to check if you are eligible for our limited time holiday discount :)')
+var isExpired = false
 var moreThanTwo = confirm('Do you have more than two items in your cart?');
-var isExpired = true
 var premiumMember = confirm('Are you a COSTCO PREMIUM member?');
-var productOffer = !isExpired && (moreThanTwo || premiumMember);
+var productOffer = (moreThanTwo || premiumMember);
+if (productOffer === true) {
+    alert("Enjoy your discount!");
+}   else {
+    alert("Sorry but this offer is unavailable to you at this time.");
+}
 
 
 
