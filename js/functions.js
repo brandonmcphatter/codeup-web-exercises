@@ -10,7 +10,6 @@
  */
 
 function sayHello(name) {
-    var name = 'Brandon'
     return ("Hello " + name + "!")
 }
 
@@ -22,8 +21,8 @@ function sayHello(name) {
  * console.log 'helloMessage' to check your work
  */
 
-sayHello(name);
-var helloMessage = sayHello(name);
+sayHello("Brandon");
+var helloMessage = sayHello("Brandon");
 console.log(helloMessage);
 
 /**
@@ -91,7 +90,8 @@ console.log(calculateTip(0.20, 40));
 
 var b = prompt("What's your bill total?")
 var a = prompt("What percentage would you like to tip?")
-alert('Your amount to tip is $' + calculateTip(a, b).toFixed(2) + "!")
+var tipAmount = a*b/100
+console.log(a*b/100);
 
 /**
  * TODO:
@@ -107,3 +107,18 @@ alert('Your amount to tip is $' + calculateTip(a, b).toFixed(2) + "!")
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+function applyDiscount(originalPrice, discountPercent) {
+    return originalPrice - (originalPrice*discountPercent);
+};
+
+console.log(applyDiscount(100, .25));
+
+// Write a function that accepts and multiplies 3 numbers and alerts the browser with the result
+
+
+function multiply(numOne, numTwo, numThree) {
+    var result = numOne*numTwo*numThree;
+    alert("Your result is " + result)
+};
+

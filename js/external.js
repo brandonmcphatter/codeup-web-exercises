@@ -4,7 +4,7 @@ console.log("Hello from external JavaScript");
 
 alert("Welcome to my website!");
 
-let favColor = prompt("What's your favorite color?");
+var favColor = prompt("What's your favorite color?");
 console.log(favColor);
 
 alert("Really?! " + favColor.toUpperCase() + " is my favorite color, too!");
